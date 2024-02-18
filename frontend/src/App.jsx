@@ -1,23 +1,19 @@
+import React from "react";
 import "./App.css";
-import ContactMe from "./components/ContactMe/ContactMe";
 import Footer from "./components/Footer/Footer";
-import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
-import Skills from "./components/Skills/Skills";
-import WorkExperience from "./components/WorkExperience/WorkExperience";
+// import HomePage from "./pages/HomePage";
+import BlogPage from "./pages/BlogPage";
 
 function App() {
   return (
-    <>
+    <React.Fragment>
       <Navbar />
       <div className="container">
-        <Hero />
-        <Skills />
-        <WorkExperience />
-        <ContactMe />
+        <BlogPage />
       </div>
       <Footer />
-    </>
+    </React.Fragment>
   );
 }
 
