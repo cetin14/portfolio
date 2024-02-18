@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom"
 import "./Navbar.css"
 import MobileNav from "./MobileNav/MobileNav";
 
@@ -15,13 +16,13 @@ const Navbar = () => {
         
         <nav className="nav-wrapper">
             <div className="nav-content">
-                <img className="logo" src="src/assets/tahalogo2.png" alt="" />
+               <Link to="/"> <img className="logo" src="src/assets/tahalogo2.png" alt="" /></Link>
                     <ul>
                         <li>
-                            <a className="menu-item">Home</a>
+                            <Link to="/" className="menu-item">Home</Link>
                         </li>
                         <li>
-                            <a className="menu-item">Blog</a>
+                            <Link to="/blog" className="menu-item">Blog</Link>
                         </li>
                         <li>
                             <a className="menu-item">Work Experience</a>
